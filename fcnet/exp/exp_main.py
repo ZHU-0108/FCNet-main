@@ -1,6 +1,6 @@
 from data_provider.data_factory import data_provider
 from exp.exp_basic import Exp_Basic
-from models import Informer, Autoformer,Transformer,FCNet_batchnorm_noabs, DLinear, Linear, NLinear, PatchTST, FCNet
+from models import Informer, Autoformer,Transformer, DLinear, Linear, NLinear, PatchTST, FCNet
 from ablationstudy import shiyan1,enhanced_block
 from utils.tools import EarlyStopping, adjust_learning_rate, visual, test_params_flop
 from utils.metrics import metric
@@ -35,9 +35,6 @@ class Exp_Main(Exp_Basic):
             'NLinear': NLinear,
             'Linear': Linear,
             'PatchTST': PatchTST,
-            'FCNet_batchnorm_noabs':FCNet_batchnorm_noabs,
-            'shiyan1':shiyan1,
-            'enhanced_block':enhanced_block,
             'FCNet': FCNet,
 
         }
